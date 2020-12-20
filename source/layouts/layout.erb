@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "pico" %>
+    <%= stylesheet_link_tag "custom" %>
+    <%= javascript_include_tag "site" %>
+</head>
+<body>
+<%= partial "layouts/nav" %>
+<%= yield %>
+</body>
+</html>
