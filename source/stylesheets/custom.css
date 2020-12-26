@@ -3,3 +3,13 @@
 .big {
     font-size: 2em;
 }
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-grid-item {
+    flex: 0 0 33%;
+}

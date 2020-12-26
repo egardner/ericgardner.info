@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'open-uri'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -33,6 +36,10 @@ helpers do
   # Expects dates in 2020-12-23 format
   def format_date date
     return Date.parse( date ).strftime("%B %d, %Y")
+  end
+
+  def fetch_xml url
+    return Nokogiri::XML( URI.open( url ) )
   end
 end
 

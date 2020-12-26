@@ -1,0 +1,32 @@
+---
+layout: layout
+title: Photos
+feed_url: https://pixelfed.social/users/egardner.atom
+---
+
+<% feed = fetch_xml current_page.data.feed_url %>
+<% posts = feed.css( "xmlns|entry" )%>
+
+<main class="container">
+    <hgroup>
+        <h1><%= current_page.data.title %></h1>
+        <p>Some recent posts from my <a href="https://pixelfed.social/egardner"
+        target="_blank">Pixelfed feed.</a></p>
+    </hgroup>
+
+    <div class="flex-grid">
+        <% posts[ 0..8 ].each do |post| %>
+
+            <div class="flex-grid-item">
+                <% summary = post.css("xmlns|summary").inner_text %>
+                <% href = post.css("xmlns|link").attr("href") %>
+                <% src = Nokogiri::XML(summary).css("img").attr("src") %>
+                <% desc = Nokogiri::XML(summary).css("p").inner_text %>
+                <a href="<%= href %>" target="_blank" title="<%= desc %>">
+                    <img src="<%= src %>" alt="<%= desc %>" />
+                </a>
+            </div>
+
+        <% end %>
+    </div>
+</main>
