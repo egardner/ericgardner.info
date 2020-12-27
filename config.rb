@@ -34,13 +34,20 @@ page '/*.txt', layout: false
 
 helpers do
   # Expects dates in 2020-12-23 format
+  #
+  # @param [String] date
+  #
   def format_date date
     return Date.parse( date ).strftime("%B %d, %Y")
   end
 
-  # Get public posts for a given user id
+  # Get recent public posts for a given user id
   # Pixelfed's API generally follows Mastodon's, documented at:
   # https://docs.joinmastodon.org/client/public/
+  #
+  # @param [String] user_id
+  # @return [Array] of post data
+  #
   def fetch_pixelfed_posts user_id
     api_path = "/api/pixelfed/v1/accounts"
     endpoint = "statuses"
@@ -48,6 +55,22 @@ helpers do
     query    = "min_id=1&only_media=true&limit=24"
     id       =  user_id
     url      = "https://#{host}#{api_path}/#{id}/#{endpoint}?#{query}"
+    res      = HTTParty.get( url, format: :plain )
+
+    JSON.parse res, symbolize_names: true
+  end
+
+  # Fetch the post data for a given "collection". Does not include
+  # any metadata about the collection itself as far as I can tell
+  #
+  # @param [String] collection_id
+  # @return [Array] of post data
+  #
+  def fetch_pixelfed_collection collection_id
+    api_path = "/api/local/collection/items"
+    host     = "pixelfed.social"
+    id       = collection_id
+    url      = "https://#{host}#{api_path}/#{id}"
     res      = HTTParty.get( url, format: :plain )
 
     JSON.parse res, symbolize_names: true

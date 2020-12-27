@@ -2,8 +2,13 @@
 layout: layout
 title: Photos
 pixelfed_id: 246325637680336896
+collection_id: 247764223759880192
 ---
+<%# Use this to fetch up to 24 most recent posts %>
 <% posts = fetch_pixelfed_posts current_page.data.pixelfed_id %>
+
+<%# Use this to fetch a specific collection %>
+<%# posts = fetch_pixelfed_collection current_page.data.collection_id %>
 
 <main class="container">
     <hgroup>
