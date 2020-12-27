@@ -1,11 +1,9 @@
 ---
 layout: layout
 title: Photos
-feed_url: https://pixelfed.social/users/egardner.atom
+pixelfed_id: 246325637680336896
 ---
-
-<% feed = fetch_xml current_page.data.feed_url %>
-<% posts = feed.css( "xmlns|entry" )%>
+<% posts = fetch_pixelfed_posts current_page.data.pixelfed_id %>
 
 <main class="container">
     <hgroup>
@@ -15,15 +13,15 @@ feed_url: https://pixelfed.social/users/egardner.atom
     </hgroup>
 
     <div class="flex-grid">
-        <% posts[ 0..8 ].each do |post| %>
+        <% posts.each do |post| %>
 
             <div class="flex-grid-item">
-                <% summary = post.css("xmlns|summary").inner_text %>
-                <% href = post.css("xmlns|link").attr("href") %>
-                <% src = Nokogiri::XML(summary).css("img").attr("src") %>
-                <% desc = Nokogiri::XML(summary).css("p").inner_text %>
-                <a href="<%= href %>" target="_blank" title="<%= desc %>">
-                    <img src="<%= src %>" alt="<%= desc %>" />
+                <% url     = post[:url] %>
+                <% summary = post[:content_text] %>
+                <% preview = post[:media_attachments][0][:preview_url] %>
+
+                <a href="<%= url %>" title="<%= summary %>" target="_blank">
+                    <img src="<%= preview %>" />
                 </a>
             </div>
 

@@ -8,8 +8,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: -1em 0 0 -1em;
 }
 
 .flex-grid-item {
-    flex: 0 0 33%;
+    flex: 0 0 50%;
+    padding: 1em 0 0 1em;
+}
+
+@media screen and ( min-width: 768px ) {
+    .flex-grid-item {
+        flex: 0 0 33%;
+        padding: 1em 0 0 1em;
+    }
 }

@@ -1,5 +1,5 @@
-require 'nokogiri'
 require 'open-uri'
+require 'httparty'
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -38,8 +38,19 @@ helpers do
     return Date.parse( date ).strftime("%B %d, %Y")
   end
 
-  def fetch_xml url
-    return Nokogiri::XML( URI.open( url ) )
+  # Get public posts for a given user id
+  # Pixelfed's API generally follows Mastodon's, documented at:
+  # https://docs.joinmastodon.org/client/public/
+  def fetch_pixelfed_posts user_id
+    api_path = "/api/pixelfed/v1/accounts"
+    endpoint = "statuses"
+    host     = "pixelfed.social"
+    query    = "min_id=1&only_media=true&limit=24"
+    id       =  user_id
+    url      = "https://#{host}#{api_path}/#{id}/#{endpoint}?#{query}"
+    res      = HTTParty.get( url, format: :plain )
+
+    JSON.parse res, symbolize_names: true
   end
 end
 
