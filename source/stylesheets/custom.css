@@ -1,9 +1,17 @@
-/* Basic design overrides, keep it simple */
+/*
+ * Basic design overrides, keep it simple
+ */
 
-.big {
-    font-size: 2em;
-}
+pre { padding: var(--spacing-gutter); }
+code { color: unset; }
+body>footer { background-color: var(--muted-background); }
 
+.big { font-size: 2em; }
+.pull-quote { font-size: 1.5em; }
+
+/*
+ * Basic flexbox-based grid for things like photos page.
+ */
 .flex-grid {
     display: flex;
     flex-direction: row;
@@ -20,5 +28,28 @@
     .flex-grid-item {
         flex: 0 0 33%;
         padding: 1em 0 0 1em;
+    }
+}
+
+/*
+ * We don't need mucho padding on top of <main class="container">
+ * when it immediately follows <header class="container">, since the
+ * latter already has lots of padding at the end
+ */
+header.container + main.container {
+    padding-top: 0;
+}
+
+/*
+ * Allow for a sidebar-style grid layout when space allows.
+ */
+@media screen and ( min-width: 992px ) {
+    main .grid {
+        grid-column-gap: var(--spacing);
+        grid-template-columns: auto 33%;
+    }
+
+    main .grid section + aside {
+        padding-left: var(--spacing-gutter);
     }
 }

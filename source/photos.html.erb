@@ -26,7 +26,7 @@ collection_id: 247764223759880192
                 <% preview = post[:media_attachments][0][:preview_url] %>
 
                 <a href="<%= url %>" title="<%= summary %>" target="_blank">
-                    <img src="<%= preview %>" />
+                    <img src="<%= preview %>" loading="lazy" />
                 </a>
             </div>
 
