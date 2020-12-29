@@ -1,0 +1,10 @@
+<header class="container">
+    <% if current_page.data.subtitle %>
+    <hgroup>
+        <h1><%= current_page.data.title %></h1>
+        <h2><%= current_page.data.subtitle %></h2>
+    </hgroup>
+    <% else %>
+        <h1><%= current_page.data.title %></h1>
+    <% end %>
+</header>

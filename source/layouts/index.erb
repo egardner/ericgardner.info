@@ -1,24 +1,26 @@
 <% wrap_layout :layout do %>
 
-<main class="container">
-    <h1><%= current_page.data.title %></h1>
-    <%= yield %>
-    <br />
+    <%= partial "layouts/header" %>
 
-    <% directory_pages = current_page.children %>
-    <% if directory_pages.empty? %>
-        <h2>Coming soon!</h2>
-    <% else %>
+    <main class="container">
+        <% directory_pages = current_page.children %>
+        <% if directory_pages.empty? %>
+            <h2>Coming soon!</h2>
+        <% else %>
+            <% directory_pages.each do |page| %>
+                <hgroup>
+                    <% link_to page.url do %>
+                        <h3><%= page.data.title %></h3>
+                    <% end %>
 
-        <% directory_pages.each do |page| %>
-            <hgroup>
-            <% link_to page.url do %>
-                <h3><%= page.data.title %></h3>
-                <% end %>
-            <h4><%= format_date page.data.date %></h4>
-            </hgroup>
+                    <h4>
+                        <% if page.data.subtitle %>
+                            <%= page.data.subtitle %>&nbsp;|&nbsp;
+                        <% end %>
+                        <%= format_date page.data.date %>
+                    </h4>
+                </hgroup>
+            <% end %>
         <% end %>
-
-    <% end %>
-</main>
+    </main>
 <% end %>

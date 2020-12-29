@@ -1,18 +1,23 @@
 <% wrap_layout :layout do %>
-    <main class="container">
-        <header>
-            <hgroup>
-                <h1><%= current_page.data.title %></h1>
-                <h6>
-                    <% if current_page.data.date %>
-                    <time datetime="<%= current_page.data.date %>">
-                        <%= format_date current_page.data.date %>
-                    </time>
-                    <% end %>
-                </h6>
-            </hgroup>
-        </header>
 
-        <%= yield %>
+    <%= partial "layouts/header" %>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <%= yield %>
+            </section>
+
+            <aside>
+                <hgroup>
+                    <h5>
+                        <time datetime="<%= current_page.data.date %>">
+                            <%= format_date current_page.data.date %>
+                        </time>
+                    </h5>
+                    <h6>Filed under: <%= current_page.data.category %></h6>
+                </hgroup>
+            </aside>
+        </div>
     </main>
 <% end %>
