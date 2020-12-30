@@ -93,8 +93,8 @@ process ever need to be more difficult?
 ## JS: None! (for now anyway)
 
 I'm not anti-JavaScript, but I simply don't see the need for it yet in this
-project. Maybe I'll need a few small functions to support things like photo
-lightboxes eventually.
+project. Maybe I'll introduce a few small functions to support things like
+photo lightboxes eventually.
 
 I do intend to avoid Webpack, Babel, and `node_modules` like the plague
 however. There is way too much complexity in the Node ecosystem and it seems
