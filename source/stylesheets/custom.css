@@ -53,3 +53,15 @@ header.container + main.container {
         padding-left: var(--spacing-gutter);
     }
 }
+
+/*
+ * Code syntax overrides
+ */
+.highlight .c1 { color: var(--code-color-5); }
+.highlight .o { color: var(--code-color-3); }
+.highlight .k, .highlight .kv, .highlight .kp { color: var(--code-color-2); }
+.highlight .no { color: var(--code-color-2); }
+.highlight .nf, .highlight .fm, .highlight .ss { color: var(--code-color-3); }
+.highlight .n, .highlight .nb { color: var(--h2); }
+.highlight .s2 { color: var(--h6); }
+
