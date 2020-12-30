@@ -41,6 +41,14 @@ header.container + main.container {
 }
 
 /*
+ * Key line at top of sidebar
+ */
+main .grid aside hgroup {
+    border-top: solid 1px;
+    padding-top: 0.5em;
+}
+
+/*
  * Allow for a sidebar-style grid layout when space allows.
  */
 @media screen and ( min-width: 992px ) {
