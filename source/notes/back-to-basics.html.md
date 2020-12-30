@@ -124,9 +124,9 @@ compression and HTTPS encryption automatically, and offers a number of other
 Why am I building a personal website by hand in 2020? These days, the Web is
 dominated by a few large platforms. In the past they pretended to be
 transparent tools that empowered their users to communicate whatever they
-wanted. But increasingly it seems like the medium has become the message, and
+wanted. But increasingly it seems that the medium has become the message, and
 services like Facebook, Google, Twitter, et al want to inject themselves into
 the conversations more and more – all in the name of maximizing "engagement".
 
 I prefer to reclaim ownership of my own voice and thoughts here and am
-encouraged to see other people doign the same.
+encouraged to see other people doing the same.
