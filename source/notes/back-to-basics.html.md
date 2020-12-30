@@ -23,7 +23,7 @@ latest (and hopefully final) incarnation of my website.
 ## Back-end: Middleman
 
 I'm using the [Middleman](https://middlemanapp.com/) static-site generator to
-generate HTML from a set of Markdown files and Ruby templates.
+produce HTML from a set of Markdown files and Ruby templates.
 
 Static site generators are enjoying a big surge in popularity these days. It
 seems like every programming language has at least one good one, and lately
@@ -33,10 +33,10 @@ what "static" back-end tools can do. There is even a trendy new term for this
 architecture, the [JAMStack](https://jamstack.org).
 
 Middleman, in comparison, is one of the more venerable examples of this
-type of software. I prefer it for two reasons: it's mostly
-feature-complete, and it is written in Ruby, my first love in programming
-languages. This gives me a tremendous amount of flexibility: I can
-just write [helper methods](https://middlemanapp.com/basics/helper-methods/)
+type of software. I prefer it for two reasons: it's feature-complete, and it
+is written in Ruby (my first love in terms of programming languages). This
+gives me a tremendous amount of flexibility: I can just write
+[helper methods](https://middlemanapp.com/basics/helper-methods/)
 for any added functionality that I need, or develop a full-blown 
 [custom extension](https://middlemanapp.com/advanced/custom-extensions/) if
 it comes to that. 
@@ -65,9 +65,9 @@ def fetch_pixelfed_posts user_id
 end
 ~~~
 
-It's just plain Ruby at the end of the day. I'm confident I can modify and
-extend this setup to support other features as needed. Otherwise, it just
-works<sup>TM</sup> and stays out of the way. 
+Middleman is just plain Ruby at the end of the day. I'm confident I can
+modify and extend this setup to support other features as needed. Otherwise,
+it just works<sup>TM</sup> and stays out of the way.
 
 ## CSS: Pico CSS micro-framework
 
