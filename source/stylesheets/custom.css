@@ -5,6 +5,11 @@
 pre { padding: var(--spacing-gutter); }
 code { color: unset; }
 body>footer { background-color: var(--muted-background); }
+body>nav { 
+    background-color: var(--background); 
+    position: sticky; 
+    top: 0;
+}
 
 .big { font-size: 2em; }
 .pull-quote { font-size: 1.5em; }
