@@ -7,8 +7,8 @@ layout: post
 ---
 
 Every year during the holidays I get the urge to tinker around with my
-personal website. "I swear, this time I'll keep it up." I chalk this up to a
-combination of having some free time and New Year's resolution feelings.
+personal website. I chalk this up to a combination of having some free time
+and New Year's resolution feelings.
 {:.pull-quote}
 
 For a while I considered using this site as a test-bed for some cool new
@@ -30,11 +30,11 @@ seems like every programming language has at least one good one, and lately
 projects like [Gatsby](https://www.gatsbyjs.com), [Next.js](https://nextjs.org), 
 and [Redwood.js](https://redwoodjs.com) have been pushing the limits of
 what "static" back-end tools can do. There is even a trendy new term for this
-architecture, the ["JAMStack"](https://jamstack.org).
+architecture, the [JAMStack](https://jamstack.org).
 
 Middleman, in comparison, is one of the more venerable examples of this
 type of software. I prefer it for two reasons: it's mostly
-feature-complete, and it is written in Ruby, my "first love" in programming
+feature-complete, and it is written in Ruby, my first love in programming
 languages. This gives me a tremendous amount of flexibility: I can
 just write [helper methods](https://middlemanapp.com/basics/helper-methods/)
 for any added functionality that I need, or develop a full-blown 
@@ -78,8 +78,8 @@ and publishing things instead.
 This must be an increasingly common experience, because recently there has
 been a proliferation of so-called 
 [classless CSS frameworks](https://css-tricks.com/no-class-css-frameworks/) –
-stylesheets that add enough styling for base HTML elements that you can do
-all your design in HTML.
+stylesheets that add enough styling for base elements that you can do all
+your design in HTML.
 
 There are many examples, but I went with a library called
 [Pico.css](https://picocss.com). It supports dark mode automatically, which
