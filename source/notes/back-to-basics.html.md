@@ -117,7 +117,7 @@ which is sort of like a high-powered version of
 repo and will run an arbitrary build process every time a new commit to the
 `master` branch is published. It provides a global CDN, performs GZIP
 compression and HTTPS encryption automatically, and offers a number of other
-[interesting features](https://www.netlify.com/products/build/).
+[interesting features](https://www.netlify.com/products/build/). It's great.
 
 ## Why?
 
