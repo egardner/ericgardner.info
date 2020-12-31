@@ -87,8 +87,8 @@ is nice. And the default designs are mostly to my liking. The ability
 to just drop in a single stylesheet sans build system is really a breath of
 fresh air too. For the few areas where I have needed to override something,
 I've just decided to embrace the cascade and add a 
-[custom.css](/stylesheets/custom.css) stylesheet of my own. Why did this
-process ever need to be more difficult?
+[custom.css](https://github.com/egardner/ericgardner.info/blob/master/source/stylesheets/custom.css) 
+stylesheet of my own. Why did this process ever need to be more difficult?
 
 ### JS: None! (for now anyway)
 
