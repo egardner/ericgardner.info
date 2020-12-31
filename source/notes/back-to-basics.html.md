@@ -20,7 +20,7 @@ something to last, you should keep it as simple as possible.
 With this philosophy in mind, here is how I'm approaching building out the
 latest (and hopefully final) incarnation of my website.
 
-## Back-end: Middleman
+### Back-end: Middleman
 
 I'm using the [Middleman](https://middlemanapp.com/) static-site generator to
 produce HTML from a set of Markdown files and Ruby templates.
@@ -69,7 +69,7 @@ Middleman is just plain Ruby at the end of the day. I'm confident I can
 modify and extend this setup to support other features as needed. Otherwise,
 it just works<sup>TM</sup> and stays out of the way.
 
-## CSS: Pico CSS micro-framework
+### CSS: Pico CSS micro-framework
 
 I often get hung up on the CSS and visual-design stage of my personal
 projects. I wanted to avoid that here so I could focus on actually writing
@@ -90,7 +90,7 @@ I've just decided to embrace the cascade and add a
 [custom.css](/stylesheets/custom.css) stylesheet of my own. Why did this
 process ever need to be more difficult?
 
-## JS: None! (for now anyway)
+### JS: None! (for now anyway)
 
 I'm not anti-JavaScript, but I simply don't see the need for it yet in this
 project. Maybe I'll introduce a few small functions to support things like
@@ -106,7 +106,7 @@ I've learned how to do without most of these "essential modern tools" over
 the last two years of working at Wikimedia, and I intend to never go back to
 the insanity of front-end build tools. 
 
-## Deployment: Github & Netlify
+### Deployment: Github & Netlify
 
 The source code for this site is publicly visible on
 [GitHub](https://github.com/egardner/ericgardner.info).
@@ -119,7 +119,7 @@ repo and will run an arbitrary build process every time a new commit to the
 compression and HTTPS encryption automatically, and offers a number of other
 [interesting features](https://www.netlify.com/products/build/). It's great.
 
-## Why?
+### Why?
 
 Why am I building a personal website by hand in 2020? These days, the Web is
 dominated by a few large platforms. In the past they pretended to be
