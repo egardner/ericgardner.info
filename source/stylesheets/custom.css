@@ -46,9 +46,8 @@ main .grid aside hgroup {
 /*
  * Utility classes
  */
-
-.big { font-size: 2em; }
-.pull-quote { font-size: 1.5em; }
+.big { font-size: 1.5em; }
+.pull-quote { font-size: 1.25em; }
 
 /*
  * Basic flexbox-based grid for things like photos page.
@@ -65,17 +64,23 @@ main .grid aside hgroup {
     padding: 1em 0 0 1em;
 }
 
-@media screen and ( min-width: 768px ) {
-    .flex-grid-item {
-        flex: 0 0 33%;
-        padding: 1em 0 0 1em;
-    }
+/*
+ * Media Queries
+ */
+@media ( min-width: 576px ) {
+    .big { font-size: 1.75em; }
 }
 
-/*
- * Allow for a sidebar-style grid layout when space allows.
- */
-@media screen and ( min-width: 992px ) {
+@media ( min-width: 768px ) {
+    .big { font-size: 2em; }
+    .pull-quote { font-size: 1.5em; }
+    .flex-grid-item { flex: 0 0 33%; }
+}
+
+@media ( min-width: 992px ) {
+    /*
+    * Allow for a sidebar-style grid layout when space allows.
+    */
     main .grid {
         grid-column-gap: var(--spacing);
         grid-template-columns: auto 33%;
