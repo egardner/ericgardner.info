@@ -1,15 +1,51 @@
 /*
  * Basic design overrides, keep it simple
  */
-
 pre { padding: var(--spacing-gutter); }
 code { color: unset; }
-body>footer { background-color: var(--muted-background); }
-body>nav { 
+h3, h4, h5, h6 { color: unset; }
+
+/*
+ * Nav styles
+ */
+body > nav {
     background-color: var(--background); 
     position: sticky; 
     top: 0;
 }
+
+/*
+ * Footer styles
+ */
+body > footer {
+    background-color: var(--muted-background);
+    padding: var(--spacing-block) 0;
+}
+
+body > footer *:last-child {
+    margin-bottom: 0;
+}
+
+/*
+ * We don't need mucho padding on top of <main class="container">
+ * when it immediately follows <header class="container">, since the
+ * latter already has lots of padding at the end
+ */
+header.container + main.container {
+    padding-top: 0;
+}
+
+/*
+ * Key line at top of sidebar
+ */
+main .grid aside hgroup {
+    border-top: solid 1px;
+    padding-top: 0.5em;
+}
+
+/*
+ * Utility classes
+ */
 
 .big { font-size: 2em; }
 .pull-quote { font-size: 1.5em; }
@@ -37,23 +73,6 @@ body>nav {
 }
 
 /*
- * We don't need mucho padding on top of <main class="container">
- * when it immediately follows <header class="container">, since the
- * latter already has lots of padding at the end
- */
-header.container + main.container {
-    padding-top: 0;
-}
-
-/*
- * Key line at top of sidebar
- */
-main .grid aside hgroup {
-    border-top: solid 1px;
-    padding-top: 0.5em;
-}
-
-/*
  * Allow for a sidebar-style grid layout when space allows.
  */
 @media screen and ( min-width: 992px ) {
@@ -68,13 +87,16 @@ main .grid aside hgroup {
 }
 
 /*
- * Code syntax overrides
+ * Syntax Highlighting
  */
-.highlight .c1 { color: var(--code-color-5); }
-.highlight .o { color: var(--code-color-3); }
-.highlight .k, .highlight .kv, .highlight .kp { color: var(--code-color-2); }
-.highlight .no { color: var(--code-color-2); }
-.highlight .nf, .highlight .fm, .highlight .ss { color: var(--code-color-3); }
-.highlight .n, .highlight .nb { color: var(--h2); }
-.highlight .s2 { color: var(--h6); }
+.highlight .c1 { color: var(--code-color-5); }                 /* comments */
+.highlight .n, .highlight .nb { color: var(--h3); }            /* variable names */
+.highlight .k, .highlight .kv { color: var(--code-color-2); }  /* language keywords */
+.highlight .no { color: var(--code-color-2); }                 /* object names */
+.highlight .nf, .highlight .fm { color: var(--code-color-3); } /* method/function names */
+.highlight .ss { color: var(--code-color-3); }                 /* symbols */
+.highlight .kp { color: var(--code-color-3); }                 /* booleans */
+.highlight .s2 { color: var(--h6); }                           /* strings */
+.highlight .o { color: var(--code-color-4); }                  /* operators */
+
 
