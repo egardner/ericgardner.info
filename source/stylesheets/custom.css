@@ -92,6 +92,49 @@ main .grid aside hgroup {
 }
 
 /*
+ * Animations
+ */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/*
+ * Staggered fade-in for photo grid; handles 24 items max for now
+ */
+.fade-in {
+    animation: fadeIn 1.5s;
+    animation-fill-mode: backwards;
+}
+
+/* The one thing CSS still doesn't have is a for loop... */
+.fade-in--1 { animation-delay: calc( 0.1s * 1 );}
+.fade-in--2 { animation-delay: calc( 0.1s * 2 );}
+.fade-in--3 { animation-delay: calc( 0.1s * 3 );}
+.fade-in--4 { animation-delay: calc( 0.1s * 4 );}
+.fade-in--5 { animation-delay: calc( 0.1s * 5 );}
+.fade-in--6 { animation-delay: calc( 0.1s * 6 );}
+.fade-in--7 { animation-delay: calc( 0.1s * 7 );}
+.fade-in--8 { animation-delay: calc( 0.1s * 8 );}
+.fade-in--9 { animation-delay: calc( 0.1s * 9 );}
+.fade-in--10 { animation-delay: calc( 0.1s * 10 );}
+.fade-in--11 { animation-delay: calc( 0.1s * 11 );}
+.fade-in--12 { animation-delay: calc( 0.1s * 12 );}
+.fade-in--13 { animation-delay: calc( 0.1s * 13 );}
+.fade-in--14 { animation-delay: calc( 0.1s * 14 );}
+.fade-in--15 { animation-delay: calc( 0.1s * 15 );}
+.fade-in--16 { animation-delay: calc( 0.1s * 16 );}
+.fade-in--17 { animation-delay: calc( 0.1s * 17 );}
+.fade-in--18 { animation-delay: calc( 0.1s * 18 );}
+.fade-in--19 { animation-delay: calc( 0.1s * 19 );}
+.fade-in--20 { animation-delay: calc( 0.1s * 20 );}
+.fade-in--21 { animation-delay: calc( 0.1s * 21 );}
+.fade-in--22 { animation-delay: calc( 0.1s * 22 );}
+.fade-in--23 { animation-delay: calc( 0.1s * 23 );}
+.fade-in--24 { animation-delay: calc( 0.1s * 24 );}
+
+
+/*
  * Syntax Highlighting
  */
 .highlight .c1 { color: var(--code-color-5); }                 /* comments */
@@ -103,5 +146,3 @@ main .grid aside hgroup {
 .highlight .kp { color: var(--code-color-3); }                 /* booleans */
 .highlight .s2 { color: var(--h6); }                           /* strings */
 .highlight .o { color: var(--code-color-4); }                  /* operators */
-
-

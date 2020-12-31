@@ -18,9 +18,9 @@ collection_id: 247764223759880192
     </hgroup>
 
     <div class="flex-grid">
-        <% posts.each do |post| %>
+        <% posts.each_with_index do |post, index| %>
 
-            <div class="flex-grid-item">
+            <div class="flex-grid-item fade-in fade-in--<%= index %>">
                 <% url     = post[:url] %>
                 <% summary = post[:content_text] %>
                 <% preview = post[:media_attachments][0][:preview_url] %>
