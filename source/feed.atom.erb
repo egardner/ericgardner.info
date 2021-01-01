@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>ericgardner.info</title>
+    <link href="https://ericgardner.info/notes/"/>
+    <link rel="self" href="https://ericgardner.info/feed.atom" />
+    <updated><%= DateTime.now.to_s %></updated>
+    <author>
+        <name>Eric Gardner</name>
+    </author>
+    <id>https://ericgardner.info/</id>
+
+    <% blog_pages.each do |entry|%>
+    <entry>
+        <title><%= entry.data.title %></title>
+        <link href="https://ericgardner.info<%= entry.url %>"/>
+        <id>https://ericgardner.info<%= entry.url %></id>
+        <updated><%= entry.data.date.to_datetime.to_s %></updated>
+        <content type="xhtml">
+        <div xmlns='http://www.w3.org/1999/xhtml'> 
+        <%= entry.render layout: false  %>
+        </div>
+        </content>
+    </entry>
+    <% end %>
+</feed>

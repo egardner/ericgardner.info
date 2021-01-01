@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'date'
 require 'httparty'
 
 set :markdown, :smartypants => true, :fenced_code_blocks => true
@@ -36,12 +37,12 @@ page '/*.txt', layout: false
 # Helper Methods
 
 helpers do
-  # Expects dates in 2020-12-23 format
+  # Expects a date object (don't wrap frontmatter dates in quotes)
   #
-  # @param [String] date
+  # @param [Date] date
   #
   def format_date date
-    return Date.parse( date ).strftime("%B %d, %Y")
+    return date.strftime("%B %d, %Y")
   end
 
   # Get recent public posts for a given user id
@@ -77,6 +78,14 @@ helpers do
     res      = HTTParty.get( url, format: :plain )
 
     JSON.parse res, symbolize_names: true
+  end
+
+  def blog_pages
+    return sitemap.resources
+            .select { |r| r.path.match(/^notes\//) }
+            .reject { |r| r.path == "notes/index.html" }
+            .sort_by { |r| r.data.date.to_time.to_i || 0 }
+            .reverse!
   end
 end
 

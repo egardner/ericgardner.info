@@ -3,11 +3,10 @@
     <%= partial "layouts/header" %>
 
     <main class="container">
-        <% directory_pages = current_page.children %>
-        <% if directory_pages.empty? %>
+        <% if blog_pages.empty? %>
             <h2>Coming soon!</h2>
         <% else %>
-            <% directory_pages.each do |page| %>
+            <% blog_pages.each do |page| %>
                 <hgroup>
                     <% link_to page.url do %>
                         <h3><%= page.data.title %></h3>

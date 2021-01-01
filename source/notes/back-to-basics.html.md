@@ -1,7 +1,7 @@
 ---
 title: Back to Basics
 subtitle: Adventures in minimalism
-date: "2020-12-27"
+date: 2020-12-27
 category: programming
 layout: post
 ---
