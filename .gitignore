@@ -1,0 +1,10 @@
+node_modules/
+.vitepress/cache/
+.vitepress/dist/
+
+logs
+*.log
+npm-debug.log*
+
+.eslintcache
+.stylelintcache

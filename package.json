@@ -1,0 +1,24 @@
+{
+  "name": "ericgardner.info",
+  "private": true,
+  "type": "module",
+  "description": "Eric Gardner's personal website.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "author": "Eric Gardner",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "cheerio": "^1.0.0-rc.12",
+    "feed": "^4.2.2",
+    "vite-imagetools": "^6.2.7",
+    "vitepress": "^1.0.0-rc.32"
+  },
+  "dependencies": {
+    "vue": "^3.3.12"
+  }
+}
