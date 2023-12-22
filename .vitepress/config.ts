@@ -75,7 +75,6 @@ export default defineConfig({
 
         for ( const { url, excerpt, frontmatter, html } of posts ) {
             const improvedHtml = formattedPagesForRSS[ url ];
-            console.log( url );
 
             feed.addItem( {
                 title: frontmatter.title,
