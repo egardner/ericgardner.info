@@ -27,6 +27,7 @@ export default defineConfig({
             // { text: 'Photography', link: '/photos' },
             { text: 'About', link: '/about' }
         ],
+        outline: false,
         aside: false,
         socialLinks: [
             { icon: 'instagram', link: 'https://www.instagram.com/ec_gardner/' },
@@ -39,7 +40,7 @@ export default defineConfig({
         }
     },
 
-    transformHtml(code, id, { content, pageData } ) {
+    transformHtml(_code, _id, { content, pageData } ) {
         const { filePath } = pageData;
         const dirname = path.dirname( filePath );
         const basename = path.basename( filePath, '.md' );
@@ -64,11 +65,10 @@ export default defineConfig({
 
         const posts = await createContentLoader( `/${blogDir}/*.md`, {
             render: true,
-            excerpt: true,
             includeSrc: true,
             transform ( rawData ) {
                 return rawData.sort( ( a, b ) => {
-                    return +new Date( b.frontmatter.date ) - +new Date( a.frontmatter.date )
+                    return +new Date( b.frontmatter.date ).getTime() - +new Date( a.frontmatter.date ).getTime()
                 } );
             }
         } ).load();

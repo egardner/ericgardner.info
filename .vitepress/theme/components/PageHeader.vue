@@ -4,7 +4,7 @@
             {{ page.title }}
         </h1>
         <h3 v-if="frontmatter.date">
-            {{ formatDate( new Date( frontmatter.date ) ) }}
+            {{ formatDate( frontmatter.date ) }}
         </h3>
     </header>
 </template>
@@ -13,7 +13,6 @@
 import { useData } from 'vitepress';
 import formatDate from '../utils/formatDate';
 const { page, frontmatter } = useData();
-
 </script>
 
 <style scoped>
