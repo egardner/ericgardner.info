@@ -1,6 +1,6 @@
 ---
 title: Timberline Trail
-date: 2021-08-05
+date: 2021-08-05 00:00:00 -8
 category: personal
 preview_image: IMG_1544.JPG
 prev:

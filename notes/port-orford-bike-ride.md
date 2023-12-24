@@ -1,7 +1,7 @@
 ---
 title: Port Orford Bike Ride
 subtitle: Riding the Wild Rivers Coast Scenic Byway
-date: 2020-08-01
+date: 2020-08-01 00:00:00 -8
 category: personal
 preview_image: DSCF8659.jpg
 next:

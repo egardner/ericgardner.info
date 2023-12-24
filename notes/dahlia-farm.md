@@ -1,6 +1,6 @@
 ---
 title: At the Dahlia Farm
-date: 2021-09-04
+date: 2021-09-04 00:00:00 -8
 category: personal
 preview_image: DSCF3626.jpg
 prev:

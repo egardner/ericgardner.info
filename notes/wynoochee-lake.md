@@ -1,6 +1,6 @@
 ---
 title: Wynoochee Lake
-date: 2021-09-01
+date: 2021-09-01 00:00:00 -8
 category: personal
 preview_image: DSCF3574.jpg
 prev:

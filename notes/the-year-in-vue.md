@@ -1,6 +1,6 @@
 ---
 title: "2020: The Year in Vue"
-date: 2021-01-22
+date: 2021-01-22 00:00:00 -8
 category: programming
 prev:
   text: Port Orford Bike Ride

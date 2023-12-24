@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-date: 2022-05-27
+date: 2022-05-27 00:00:00 -8
 category: personal
 image: /images/iris_1.jpg
 next:
