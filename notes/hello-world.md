@@ -3,6 +3,9 @@ title: "Hello World"
 date: 2022-05-27
 category: personal
 image: /images/iris_1.jpg
+next:
+  text: Recently
+  link: /notes/recently-december-2023
 prev:
   text: Lan Su Garden
   link: /notes/lan-su-garden
