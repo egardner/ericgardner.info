@@ -25,7 +25,7 @@ export default defineComponent( {
             data.forEach( image => {
                 images.value.push( {
                     src: image.default[ 0 ],
-                    srcset: `${image.default[ 1 ]} 800w`,
+                    srcset: `${image.default[ 0 ]} 450w, ${image.default[ 1 ]} 800w`,
                     sizes: '(max-width: 600px) 450px, 800px'
                 } );
             } );

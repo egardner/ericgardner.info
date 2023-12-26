@@ -4,9 +4,9 @@
             <div v-for="image in props.images" class="gallery__item">
                 <template v-if="image.srcset">
                     <img
-                        :src="image.src"
                         :srcset="image.srcset"
                         :sizes="image.sizes"
+                        :src="image.src"
                         :alt="image.alt"
                     >
                 </template>
