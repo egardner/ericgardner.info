@@ -16,14 +16,18 @@ export default defineComponent( {
         const ready = ref( false );
         const images = ref( [] );
         const imageData = import.meta.glob( '/images/discontentment/*.jpg', {
-            query: { h: 800 }
+            query: { h: '450;800' }
         } );
 
         const pending = Object.values( imageData ).map( img => img() );
 
         Promise.all( pending ).then( data => {
             data.forEach( image => {
-                images.value.push( { src: image.default } );
+                images.value.push( {
+                    src: image.default[ 0 ],
+                    srcset: `${image.default[ 1 ]} 800w`,
+                    sizes: '(max-width: 600px) 450px, 800px'
+                } );
             } );
 
             ready.value = true;

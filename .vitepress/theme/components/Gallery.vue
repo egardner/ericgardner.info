@@ -2,7 +2,17 @@
     <div class="gallery">
         <div class="gallery__wrapper">
             <div v-for="image in props.images" class="gallery__item">
-                <img :src="image.src" :alt="image.alt">
+                <template v-if="image.srcset">
+                    <img
+                        :src="image.src"
+                        :srcset="image.srcset"
+                        :sizes="image.sizes"
+                        :alt="image.alt"
+                    >
+                </template>
+                <template v-else>
+                    <img :src="image.src" :alt="image.alt">
+                </template>
             </div>
         </div>
     </div>
@@ -11,12 +21,15 @@
 <script setup lang="ts">
 interface Image {
     src: string,
-    alt?: string
+    srcset?: string
+    alt?: string,
+    sizes?: string
 }
 
 const props = defineProps<{
     images: Image[]
 }>();
+
 </script>
 
 <style>
