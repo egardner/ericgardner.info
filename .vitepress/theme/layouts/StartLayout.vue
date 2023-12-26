@@ -16,7 +16,7 @@ export default defineComponent( {
         const ready = ref( false );
         const images = ref( [] );
         const imageData = import.meta.glob( '/images/discontentment/*.jpg', {
-            query: { h: '450;800' }
+            query: { h: '450;800', format: 'jpeg', progressive: 'true' }
         } );
 
         const pending = Object.values( imageData ).map( img => img() );
