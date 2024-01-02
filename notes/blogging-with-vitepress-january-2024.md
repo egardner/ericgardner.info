@@ -1,6 +1,9 @@
 ---
 title: Blogging with Vitepress
 date: 2024-01-02T19:41:00Z
+prev:
+  text: Recently
+  link: /notes/recently-december-2023
 ---
 
 Happy new year!

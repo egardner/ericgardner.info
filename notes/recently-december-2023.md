@@ -2,6 +2,9 @@
 title: "Recently"
 date: 2023-12-23 00:00:00 -8
 category: personal
+next:
+  text: Blogging with Vitepress
+  link: /notes/blogging-with-vitepress-january-2024
 prev:
   text: Hello World
   link: /notes/hello-world
