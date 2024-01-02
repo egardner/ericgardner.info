@@ -1,6 +1,6 @@
 ---
 title: Blogging with Vitepress
-date: Tue, 02 Jan 2024 19:22:05 GMT
+date: 2024-01-02T19:41:00Z
 ---
 
 Happy new year!

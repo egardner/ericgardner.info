@@ -55,7 +55,7 @@ if ( title ) {
 // Set up the frontmatter for the file
 const template = `---
 title: ${title}
-date: ${today.toUTCString()}
+date: ${today.toISOString()}
 ---
 
 Hello world!
