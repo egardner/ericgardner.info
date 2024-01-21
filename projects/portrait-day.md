@@ -19,11 +19,11 @@ I'd love it if you could drop by for an hour or two! Children and babies welcome
 
 This will be a casual event, and I expect folks will be coming and going
 throughout the day. However, it would be helpful for me to know roughly
-when folks are planning on coming by so that I can plan accordingly.
+when folks intend to come by so that I can plan accordingly.
 
-If you plan on attending, please let me know roughly when you want to come
-by and I'll add you to the schedule below. It's okay if there is some
-overlap but ideally people will be spread out throughout the day.
+If you plan on dropping by, please let me know roughly when you want to come and
+I'll add you to the schedule below. It's okay if there is some overlap but
+ideally people will be spread out throughout the day.
 
 Hope to see you there!
 
