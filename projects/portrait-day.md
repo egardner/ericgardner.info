@@ -21,8 +21,8 @@ This will be a casual event, and I expect folks will be coming and going
 throughout the day. However, it would be helpful for me to know roughly when
 folks intend to come by so that I can plan accordingly.
 
-If you plan on dropping by, please let me know when you want to come by simply
-replying to this email. Also, I know that some of you are photographers
+If you plan on dropping by, please let me know when you want to come and I can
+add you to the schedule below. Also, I know that some of you are photographers
 yourselves – feel free to bring your own camera stuff as well, and let me know
 if you want to collaborate in some capacity during the day.
 
