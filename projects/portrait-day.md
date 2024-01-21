@@ -8,7 +8,7 @@ title: Portrait Day
 />
 
 Hi friends! On **Saturday, February 3,** I will be hosting a "portrait day" at 
-[Half Court Studios](https://www.halfcourtstudio.com) here in Portland. I have
+[Half Court Studio](https://www.halfcourtstudio.com) here in Portland. I have
 reserved the space for the day and hope to spend this time making a series of
 portraits of friends / family / friends' families. I'm doing this for fun and
 with the goal of becoming a better portrait photographer. I will be working with
@@ -18,12 +18,13 @@ free to bring any props our outfits that you like!
 I'd love it if you could drop by for an hour or two! Children and babies welcome.
 
 This will be a casual event, and I expect folks will be coming and going
-throughout the day. However, it would be helpful for me to know roughly
-when folks intend to come by so that I can plan accordingly.
+throughout the day. However, it would be helpful for me to know roughly when
+folks intend to come by so that I can plan accordingly.
 
-If you plan on dropping by, please let me know roughly when you want to come and
-I'll add you to the schedule below. It's okay if there is some overlap but
-ideally people will be spread out throughout the day.
+If you plan on dropping by, please let me know when you want to come by simply
+replying to this email. Also, I know that some of you are photographers
+yourselves – feel free to bring your own camera stuff as well, and let me know
+if you want to collaborate in some capacity during the day.
 
 Hope to see you there!
 
