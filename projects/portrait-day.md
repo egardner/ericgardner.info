@@ -48,13 +48,12 @@ Let me know when you plan to drop by and I'll add you to this list!
 
 | When | Who |
 |------|-----|
-| 9am  |     |
-| 10am |     |
-| 11am |     |
+| 9am  | Laurel & Iris |
+| 10am | Antoinette & Remy, Alan & Laura, Amira & Marcus, Colin & Jessie |
+| 11am | Nathan and Caitlin |
 | 12pm |     |
-|  1pm |     |
+|  1pm | Maylee and Jeremy |
 |  2pm |     |
-|  3pm |     |
-|  4pm |     |
-|  5pm |     |
+|  3pm | Justin |
+|  4pm | Rachel, Jaclyn & Matthew |
 

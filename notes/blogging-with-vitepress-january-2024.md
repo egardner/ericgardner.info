@@ -4,6 +4,9 @@ date: 2024-01-02T19:41:00Z
 prev:
   text: Recently
   link: /notes/recently-december-2023
+next:
+  text: Recently
+  link: /notes/recently-february-2024
 ---
 
 Happy new year!

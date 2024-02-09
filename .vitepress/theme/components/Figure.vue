@@ -1,6 +1,6 @@
 <template>
     <figure>
-        <img :src="src" alt="alt">
+        <img :src="src" :alt="alt">
         <figcaption v-if="caption">{{ caption }}</figcaption>
     </figure>
 </template>
