@@ -4,6 +4,9 @@ date: 2024-02-09T20:48:12.012Z
 prev:
   text: Blogging with Vitepress
   link: /notes/blogging-with-vitepress-january-2024
+next:
+  text: Knowledge Management in the Age of AI
+  link: /notes/knowledge-management-june-2025
 ---
 <script setup>
 import image1 from '/images/DSCF7776.jpg?w=900';
