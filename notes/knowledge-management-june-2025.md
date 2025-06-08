@@ -33,14 +33,14 @@ using Emacs in favor of more modern tools that are less flexible but also less
 of a hassle. 
 
 However, I often found myself missing some of the features that Emacs provided
-– [Org-Mode](https://orgmode.org) in particular. Org-Mode is nominally a tool
-for writing hierarchical text documents, but really it provides an entirely
-text-based workflow for note-taking, agendas, and various forms of personal
-knowledge management. Once you get the hang of it, it's very intuitive. Some
-people manage their entire lives through Org-Mode and use it to have years of
-personal information at their fingertips.
+– [Org-Mode](https://orgmode.org) in particular. Org-Mode is a tool
+for writing hierarchical text documents, and can serve as the foundation for an
+entirely text-based workflow for note-taking, agendas, and various forms of
+personal knowledge management. Once you get the hang of it, it's very intuitive.
+Some people manage their entire lives through Org-Mode and use it to have years
+of information at their fingertips.
 
-### Obsidian: A modern Org-Mode replacement?
+### Obsidian: An Org-Mode replacement?
 
 I'm currently in the process of preparing for a new role on a new team at my
 job, and I have a lot of projects to get up to speed on. Enter
