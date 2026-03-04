@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
 import PageHeader from '../components/PageHeader.vue';
-import TestComponent from '../components/TestComponent.vue';
-const { Layout } = DefaultTheme
+import useImageFade from '../composables/useImageFade';
+const { Layout } = DefaultTheme;
+
+useImageFade();
 </script>
 
 <template>
