@@ -4,70 +4,146 @@
  */
 
 /**
- * Colors
- *
- * Each colors have exact same color scale system with 3 levels of solid
- * colors with different brightness, and 1 soft color.
- * 
- * - `XXX-1`: The most solid color used mainly for colored text. It must
- *   satisfy the contrast ratio against when used on top of `XXX-soft`.
- *
- * - `XXX-2`: The color used mainly for hover state of the button.
- *
- * - `XXX-3`: The color for solid background, such as bg color of the button.
- *   It must satisfy the contrast ratio with pure white (#ffffff) text on
- *   top of it.
- *
- * - `XXX-soft`: The color used for subtle background such as custom container
- *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
- *   on top of it.
- *
- *   The soft color must be semi transparent alpha channel. This is crucial
- *   because it allows adding multiple "soft" colors on top of each other
- *   to create a accent, such as when having inline code block inside
- *   custom containers.
- *
- * - `default`: The color used purely for subtle indication without any
- *   special meanings attched to it such as bg color for menu hover state.
- *
- * - `brand`: Used for primary brand colors, such as link text, button with
- *   brand theme, etc.
- *
- * - `tip`: Used to indicate useful information. The default theme uses the
- *   brand color for this by default.
- *
- * - `warning`: Used to indicate warning to the users. Used in custom
- *   container, badges, etc.
- *
- * - `danger`: Used to show error, or dangerous message to the users. Used
- *   in custom container, badges, etc.
+ * Colors: Warm editorial palette
  * -------------------------------------------------------------------------- */
 
 :root {
-    --vp-c-default-1: var(--vp-c-gray-1);
-    --vp-c-default-2: var(--vp-c-gray-2);
-    --vp-c-default-3: var(--vp-c-gray-3);
-    --vp-c-default-soft: var(--vp-c-gray-soft);
+    /* Warm light mode backgrounds */
+    --vp-c-bg: #faf8f4;
+    --vp-c-bg-alt: #f0ede6;
+    --vp-c-bg-elv: #faf8f4;
+    --vp-c-bg-soft: #f0ede6;
 
-    --vp-c-brand-1: var(--vp-c-indigo-1);
-    --vp-c-brand-2: var(--vp-c-indigo-2);
-    --vp-c-brand-3: var(--vp-c-indigo-3);
-    --vp-c-brand-soft: var(--vp-c-indigo-soft);
+    /* Warm text colors */
+    --vp-c-text-1: #2a2926;
+    --vp-c-text-2: #6b6560;
+    --vp-c-text-3: #9a938c;
 
+    /* Borders and dividers */
+    --vp-c-divider: #e0dbd4;
+    --vp-c-border: #d6d0c8;
+    --vp-c-gutter: #e0dbd4;
+
+    /* Brand: warm terracotta */
+    --vp-c-brand-1: #b06534;
+    --vp-c-brand-2: #9a5729;
+    --vp-c-brand-3: #c17040;
+    --vp-c-brand-soft: rgba(193, 112, 64, 0.12);
+
+    /* Default (gray) overrides with warm tones */
+    --vp-c-default-1: #6b6560;
+    --vp-c-default-2: #9a938c;
+    --vp-c-default-3: #b8b2aa;
+    --vp-c-default-soft: rgba(107, 101, 96, 0.12);
+
+    /* Tip uses brand */
     --vp-c-tip-1: var(--vp-c-brand-1);
     --vp-c-tip-2: var(--vp-c-brand-2);
     --vp-c-tip-3: var(--vp-c-brand-3);
     --vp-c-tip-soft: var(--vp-c-brand-soft);
 
-    --vp-c-warning-1: var(--vp-c-yellow-1);
-    --vp-c-warning-2: var(--vp-c-yellow-2);
-    --vp-c-warning-3: var(--vp-c-yellow-3);
-    --vp-c-warning-soft: var(--vp-c-yellow-soft);
+    /* Warning: warm yellow */
+    --vp-c-warning-1: #915e1e;
+    --vp-c-warning-2: #a8711f;
+    --vp-c-warning-3: #c48c2a;
+    --vp-c-warning-soft: rgba(196, 140, 42, 0.12);
 
-    --vp-c-danger-1: var(--vp-c-red-1);
-    --vp-c-danger-2: var(--vp-c-red-2);
-    --vp-c-danger-3: var(--vp-c-red-3);
-    --vp-c-danger-soft: var(--vp-c-red-soft);
+    /* Danger: warm red */
+    --vp-c-danger-1: #a13131;
+    --vp-c-danger-2: #b73a3a;
+    --vp-c-danger-3: #cc4444;
+    --vp-c-danger-soft: rgba(204, 68, 68, 0.12);
+}
+
+.dark {
+    --vp-c-bg: #1c1b19;
+    --vp-c-bg-alt: #252420;
+    --vp-c-bg-elv: #252420;
+    --vp-c-bg-soft: #2e2d28;
+
+    --vp-c-text-1: #ede9e0;
+    --vp-c-text-2: #a8a198;
+    --vp-c-text-3: #7a746c;
+
+    --vp-c-divider: #3a3835;
+    --vp-c-border: #45423d;
+    --vp-c-gutter: #3a3835;
+
+    --vp-c-brand-1: #d4885a;
+    --vp-c-brand-2: #e09a6e;
+    --vp-c-brand-3: #c17040;
+    --vp-c-brand-soft: rgba(212, 136, 90, 0.16);
+
+    --vp-c-default-1: #a8a198;
+    --vp-c-default-2: #7a746c;
+    --vp-c-default-3: #55504a;
+    --vp-c-default-soft: rgba(168, 161, 152, 0.12);
+
+    --vp-c-warning-1: #d4a84a;
+    --vp-c-warning-2: #c49835;
+    --vp-c-warning-3: #a8811e;
+    --vp-c-warning-soft: rgba(196, 152, 53, 0.16);
+
+    --vp-c-danger-1: #e06060;
+    --vp-c-danger-2: #cc4444;
+    --vp-c-danger-3: #a13131;
+    --vp-c-danger-soft: rgba(224, 96, 96, 0.16);
+}
+
+/**
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+:root {
+    --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    --vp-font-family-heading: 'Source Serif 4', 'Georgia', 'Times New Roman', serif;
+}
+
+/**
+ * Heading typography: serif font with fluid scale
+ * -------------------------------------------------------------------------- */
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.vp-doc h5,
+.vp-doc h6 {
+    font-family: var(--vp-font-family-heading);
+}
+
+.vp-doc h1 {
+    font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.vp-doc h2 {
+    font-size: clamp(1.35rem, 1.15rem + 0.85vw, 1.75rem);
+    line-height: 1.3;
+}
+
+.vp-doc h3 {
+    font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.35rem);
+    line-height: 1.4;
+}
+
+.vp-doc {
+    line-height: 1.7;
+}
+
+/**
+ * Navbar: serif site title
+ * -------------------------------------------------------------------------- */
+
+.VPNavBarTitle .title {
+    font-family: var(--vp-font-family-heading);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.075em;
 }
 
 /**
@@ -87,38 +163,6 @@
 }
 
 /**
- * Component: Home
- * -------------------------------------------------------------------------- */
-
-:root {
-    --vp-home-hero-name-color: transparent;
-    --vp-home-hero-name-background: -webkit-linear-gradient(
-        120deg,
-        #bd34fe 30%,
-        #41d1ff
-    );
-
-    --vp-home-hero-image-background-image: linear-gradient(
-        -45deg,
-        #bd34fe 50%,
-        #47caff 50%
-        );
-    --vp-home-hero-image-filter: blur(44px);
-}
-
-@media (min-width: 640px) {
-    :root {
-        --vp-home-hero-image-filter: blur(56px);
-    }
-}
-
-@media (min-width: 960px) {
-    :root {
-        --vp-home-hero-image-filter: blur(68px);
-    }
-}
-
-/**
  * Component: Custom Block
  * -------------------------------------------------------------------------- */
 
@@ -127,14 +171,6 @@
     --vp-custom-block-tip-text: var(--vp-c-text-1);
     --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
     --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-}
-
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
-
-.DocSearch {
-    --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
 /**
@@ -170,7 +206,7 @@
     * - https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/
     * - https://www.joshwcomeau.com/css/full-bleed/
     */
-    --content-grid: 
+    --content-grid:
         [bleed-start] var(--grid-space)
         [padding-start] 1fr
         [feature-start] var(--feature)
@@ -192,6 +228,60 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-areas: 'main';
+}
+
+/**
+ * Focus styles
+ * -------------------------------------------------------------------------- */
+
+*:focus-visible {
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: var(--vp-c-brand-1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.vp-doc a:focus-visible,
+.home-recent__list a:focus-visible,
+.home-recent__more:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: var(--vp-c-brand-1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.VPSocialLink:focus-visible,
+.VPNavBarMenuLink:focus-visible,
+.VPNavBarHamburger:focus-visible,
+button:focus-visible {
+    text-decoration: none;
+    outline: 2px solid var(--vp-c-brand-1);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.VPSocialLink:focus-visible {
+    color: var(--vp-c-brand-1);
+}
+
+/**
+ * Transition Styles
+ * -------------------------------------------------------------------------- */
+
+/**
+ * Image fade-in on load
+ * -------------------------------------------------------------------------- */
+
+.vp-doc img,
+.home-image img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.vp-doc img.loaded,
+.home-image img.loaded {
+    opacity: 1;
 }
 
 /**

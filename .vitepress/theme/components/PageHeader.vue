@@ -20,6 +20,10 @@ header {
     margin: 2rem 0;
 }
 
+header h1 {
+    font-family: var(--vp-font-family-heading);
+}
+
 header h3 {
     color: var( --vp-c-text-3 );
     font-family: var(--vp-font-family-mono);

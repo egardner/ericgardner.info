@@ -26,10 +26,27 @@ ul {
 li {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.25rem 0;
+}
+
+li strong a {
+    font-family: var(--vp-font-family-heading);
+    text-decoration: none;
+    color: var(--vp-c-text-1);
+    transition: color 0.2s ease;
+}
+
+li strong a:hover {
+    color: var(--vp-c-brand-1);
 }
 
 li span {
     font-family: var(--vp-font-family-mono);
     font-size: var(--vp-code-font-size);
+    color: var(--vp-c-text-3);
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 </style>
