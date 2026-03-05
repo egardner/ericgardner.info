@@ -5,7 +5,7 @@
         </section>
 
         <section class="home-image">
-            <img :src="ferryImage" alt="View from inside a Washington State Ferry" />
+            <img :src="ferryImage.src" :width="ferryImage.width" :height="ferryImage.height" alt="View from inside a Washington State Ferry" />
         </section>
 
         <section class="home-recent" v-if="recentPosts.length">

@@ -8,10 +8,17 @@
                         :sizes="image.sizes"
                         :src="image.src"
                         :alt="image.alt"
+                        :width="image.width"
+                        :height="image.height"
                     >
                 </template>
                 <template v-else>
-                    <img :src="image.src" :alt="image.alt">
+                    <img
+                        :src="image.src"
+                        :alt="image.alt"
+                        :width="image.width"
+                        :height="image.height"
+                    >
                 </template>
             </div>
         </div>
@@ -23,7 +30,9 @@ interface Image {
     src: string,
     srcset?: string
     alt?: string,
-    sizes?: string
+    sizes?: string,
+    width?: number,
+    height?: number
 }
 
 const props = defineProps<{
@@ -33,7 +42,7 @@ const props = defineProps<{
 </script>
 
 <style>
-/* 
+/*
 * Gallery styles. Galleries are responsive, horizontally scrolling
 * areas suitable for showing images (which do not all have to be
 * the same aspect ratio). This layout is adapted from:
