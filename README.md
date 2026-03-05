@@ -75,9 +75,20 @@ import photo from '/images/example.jpg?w=900';
 <Figure :src="photo" alt="Description" caption="Optional caption" />
 ```
 
-The `?w=900` directive resizes the image to 900px wide during the build. Source
-images can be stored at higher resolutions for flexibility; imagetools generates
-optimized output.
+The `?w=900` directive resizes the image to 900px wide during the build.
+
+### Auto-resizing
+
+A git pre-commit hook automatically resizes any staged images in `images/` so
+the longest edge is at most 3000px. This keeps the repository manageable without
+manual intervention. The hook is installed via `npm run prepare` (runs
+automatically on `npm install`).
+
+To resize all images manually:
+
+```sh
+npm run resize
+```
 
 The `<Figure>` component renders an `<img>` inside a `<figure>` element with an
 optional `<figcaption>`. The `<Gallery>` component provides a horizontally

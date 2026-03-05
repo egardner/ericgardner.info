@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "resize": "node .bin/resize-images.js",
+    "prepare": "cp .bin/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
   },
   "author": "Eric Gardner",
   "license": "MIT",
