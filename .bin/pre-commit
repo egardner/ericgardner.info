@@ -3,17 +3,19 @@
 # Pre-commit hook: auto-resize staged images in the images/ directory.
 # Installed via `npm run prepare`.
 
-git diff --cached --name-only -z --diff-filter=ACM | grep -z '^images/.*\.\(jpg\|jpeg\|png\)$' > /tmp/staged-images.txt
+TMPFILE="$(git rev-parse --git-dir)/staged-images.txt"
 
-if [ ! -s /tmp/staged-images.txt ]; then
-    rm -f /tmp/staged-images.txt
+git diff --cached --name-only -z --diff-filter=ACM | grep -z '^images/.*\.\(jpg\|jpeg\|png\)$' > "$TMPFILE"
+
+if [ ! -s "$TMPFILE" ]; then
+    rm -f "$TMPFILE"
     exit 0
 fi
 
 echo "Resizing staged images..."
-xargs -0 node .bin/resize-images.js < /tmp/staged-images.txt
+xargs -0 node .bin/resize-images.js < "$TMPFILE"
 
 # Re-stage the resized files
-xargs -0 git add < /tmp/staged-images.txt
+xargs -0 git add < "$TMPFILE"
 
-rm -f /tmp/staged-images.txt
+rm -f "$TMPFILE"
