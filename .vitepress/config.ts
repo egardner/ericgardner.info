@@ -19,6 +19,9 @@ export default defineConfig({
     title: siteTitle,
     description: siteDescription,
     cleanUrls: true,
+    ignoreDeadLinks: [
+        /\/feed\.rss$/
+    ],
     vite: { plugins: [ imagetools() ] },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config

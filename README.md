@@ -87,7 +87,7 @@ scrolling image layout for photo-heavy posts.
 
 The site extends the VitePress default theme with a warm, editorial aesthetic:
 
-- **Typography**: Source Serif 4 (headings) and Inter (body)
+- **Typography**: Source Serif 4 (headings), Source Sans 3 (body), Source Code Pro (code)
 - **Colors**: Warm cream/terracotta palette with both light and dark modes
 - **Layout**: A CSS content grid with `content`, `feature`, `padding`, and
   `bleed` columns for flexible content widths
@@ -98,7 +98,7 @@ modifying default theme components directly.
 ## License
 
 Code is MIT-licensed. Written content and photographs are copyright Eric
-Gardner and all rights reserved. See [LICENSE](LICENSE) for details.
+Gardner and all rights reserved. See LICENSE file for details.
 
 ## RSS Feed
 
