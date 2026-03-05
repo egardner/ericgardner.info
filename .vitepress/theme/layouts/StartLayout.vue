@@ -22,9 +22,11 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import { data as posts } from '/data/posts.data';
 import formatDate from '../utils/formatDate';
 import getSorted from '../utils/getSorted';
+// @ts-ignore
 import ferryImage from '/images/ferry.jpg?w=900';
 
 const recentPosts = getSorted( posts ).slice( 0, 5 );

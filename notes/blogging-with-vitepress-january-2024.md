@@ -72,9 +72,9 @@ const { Layout } = DefaultTheme
 
 <template>
     <Layout>
-        <template #doc-before> // [!code highlight]
-            <PageHeader /> // [!code highlight]
-        </template> // [!code highlight]
+        <template #doc-before> <!-- [!code highlight] -->
+            <PageHeader /> <!-- [!code highlight] -->
+        </template> <!-- [!code highlight] -->
     </Layout>
 </template>
 ```
@@ -97,9 +97,9 @@ const { Layout } = DefaultTheme
             <PageHeader />
         </template>
 
-        <template #layout-bottom> // [!code highlight]
-            <TestComponent name="Layout bottom" /> // [!code highlight]
-        </template> // [!code highlight]
+        <template #layout-bottom> <!-- [!code highlight] -->
+            <TestComponent name="Layout bottom" /> <!-- [!code highlight] -->
+        </template> <!-- [!code highlight] -->
     </Layout>
 </template>
 ```
