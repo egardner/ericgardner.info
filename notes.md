@@ -11,7 +11,7 @@ const sortedPosts = getSorted( posts );
 <ul>
     <li v-for="post of sortedPosts">
         <strong><a :href="post.url">{{ post.frontmatter.title }}</a></strong><br/>
-        <span>{{ formatDate( post.frontmatter.date ) }}</span>
+        <span>{{ formatDate( post.frontmatter.date, true ) }}</span>
     </li>
 </ul>
 
@@ -43,8 +43,9 @@ li strong a:hover {
 }
 
 li span {
-    font-family: var(--vp-font-family-mono);
-    font-size: var(--vp-code-font-size);
+    font-family: var(--vp-font-family-heading);
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: oldstyle-nums;
     color: var(--vp-c-text-3);
     white-space: nowrap;
     flex-shrink: 0;

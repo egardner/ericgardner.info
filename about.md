@@ -14,8 +14,9 @@ media.
 ## Colophon
 
 This site is built using [Vitepress](https://vitepress.dev) and [Vue.js](https://vuejs.org).
-Headings are set in [Source Serif 4](https://fonts.google.com/specimen/Source+Serif+4)
-and body text in [Inter](https://rsms.me/inter/). It is hosted on [Netlify](https://www.netlify.com).
+It is typeset in Adobe's [Source](https://adobe-fonts.github.io/source-sans/) family:
+Source Serif 4 for headings, Source Sans 3 for body text, and Source Code Pro
+for code. All fonts are self-hosted. It is hosted on [Netlify](https://www.netlify.com).
 
 In addition to Vue & Vitepress, I am using the following Node.js packages:
 
