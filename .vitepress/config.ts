@@ -22,7 +22,18 @@ export default defineConfig({
     ignoreDeadLinks: [
         /\/feed\.rss$/
     ],
-    vite: { plugins: [ imagetools() ] },
+    vite: {
+        plugins: [
+            imagetools( {
+                defaultDirectives: ( url ) => {
+                    if ( url.searchParams.has( 'w' ) ) {
+                        return new URLSearchParams( 'as=meta' );
+                    }
+                    return new URLSearchParams();
+                }
+            } )
+        ]
+    },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         siteTitle: 'Eric Gardner',
