@@ -9,7 +9,7 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "resize": "node .bin/resize-images.js",
-    "prepare": "cp .bin/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit"
+    "prepare": "[ -d .git/hooks ] && cp .bin/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit || true"
   },
   "author": "Eric Gardner",
   "license": "MIT",
