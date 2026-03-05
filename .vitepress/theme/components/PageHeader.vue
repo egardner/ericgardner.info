@@ -26,7 +26,9 @@ header h1 {
 
 header h3 {
     color: var( --vp-c-text-3 );
-    font-family: var(--vp-font-family-mono);
+    font-family: var(--vp-font-family-heading);
+    font-variant-caps: all-small-caps;
+    font-variant-numeric: oldstyle-nums;
     font-weight: normal;
     margin-top: 0.25rem;
 }
