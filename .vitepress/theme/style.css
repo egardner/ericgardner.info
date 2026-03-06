@@ -162,6 +162,7 @@
 .vp-doc h5,
 .vp-doc h6 {
     font-family: var(--vp-font-family-heading);
+    text-wrap: balance;
 }
 
 .vp-doc h1 {
@@ -189,6 +190,8 @@
 .vp-doc p,
 .vp-doc li {
     line-height: 1.75;
+    text-wrap: pretty;
+    hanging-punctuation: first allow-end;
 }
 
 .vp-doc blockquote {

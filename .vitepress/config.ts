@@ -22,6 +22,9 @@ export default defineConfig({
     ignoreDeadLinks: [
         /\/feed\.rss$/
     ],
+    markdown: {
+        typographer: true
+    },
     vite: {
         plugins: [
             imagetools( {
