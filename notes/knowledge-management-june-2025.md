@@ -4,6 +4,9 @@ date: 2025-06-07
 prev:
   text: Recently (February 2024)
   link: /notes/recently-february-2024
+next:
+  text: Sunshine in Old Town
+  link: /notes/sunshine-in-old-town-march-2026
 ---
 
 ### The Joy (and pain) of Emacs
