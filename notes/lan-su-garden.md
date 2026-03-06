@@ -11,12 +11,12 @@ next:
   link: /notes/hello-world
 ---
 <script setup>
-import image1 from '/images/DSCF0842.jpg?w=900';
-import image2 from '/images/DSCF0818.jpg?w=900';
-import image3 from '/images/DSCF0855.jpg?w=900';
-import image4 from '/images/DSCF0861.jpg?w=900';
-import image5 from '/images/DSCF0893.jpg?w=900';
-import image6 from '/images/DSCF0819.jpg?w=900';
+import image1 from '/images/DSCF0842.jpg?w=1000';
+import image2 from '/images/DSCF0818.jpg?w=1000';
+import image3 from '/images/DSCF0855.jpg?w=1000';
+import image4 from '/images/DSCF0861.jpg?w=1000';
+import image5 from '/images/DSCF0893.jpg?w=1000';
+import image6 from '/images/DSCF0819.jpg?w=1000';
 
 const images = [
     { src: image1, alt: 'Lan Su Chinese Garden' },

@@ -69,13 +69,13 @@ processes them at build time when they are imported with a query parameter:
 
 ```vue
 <script setup>
-import photo from '/images/example.jpg?w=900';
+import photo from '/images/example.jpg?w=1000';
 </script>
 
 <Figure :src="photo" alt="Description" caption="Optional caption" />
 ```
 
-The `?w=900` directive resizes the image to 900px wide during the build.
+The `?w=1000` directive resizes the image to 1000px wide during the build.
 
 ### Auto-resizing
 

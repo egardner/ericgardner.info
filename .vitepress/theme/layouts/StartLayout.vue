@@ -27,7 +27,7 @@ import { data as posts } from '/data/posts.data';
 import formatDate from '../utils/formatDate';
 import getSorted from '../utils/getSorted';
 // @ts-ignore
-import ferryImage from '/images/ferry.jpg?w=900';
+import ferryImage from '/images/ferry.jpg?w=1000';
 
 const recentPosts = getSorted( posts ).slice( 0, 5 );
 </script>

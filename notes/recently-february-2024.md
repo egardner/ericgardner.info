@@ -9,9 +9,9 @@ next:
   link: /notes/knowledge-management-june-2025
 ---
 <script setup>
-import image1 from '/images/DSCF7776.jpg?w=900';
-import image2 from '/images/DSCF6637.jpg?w=900';
-import image3 from '/images/DSCF5735.jpg?w=900';
+import image1 from '/images/DSCF7776.jpg?w=1000';
+import image2 from '/images/DSCF6637.jpg?w=1000';
+import image3 from '/images/DSCF5735.jpg?w=1000';
 
 const images = [ {
     src: image1,

@@ -11,7 +11,7 @@ prev:
   link: /notes/lan-su-garden
 ---
 <script setup>
-import image1 from '/images/iris_1.jpg?w=900';
+import image1 from '/images/iris_1.jpg?w=1000';
 </script>
 
 <Figure :src="image1" caption="Iris shortly before leaving the hospital." />

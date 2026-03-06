@@ -11,12 +11,12 @@ next:
   link: /notes/hello-world
 ---
 <script setup>
-import image1 from '/images/DSCF3615.jpg?w=900';
-import image2 from '/images/DSCF3626.jpg?w=900';
-import image3 from '/images/DSCF3622.jpg?w=900';
-import image4 from '/images/DSCF3665.jpg?w=900';
-import image5 from '/images/DSCF3640.jpg?w=900';
-import image6 from '/images/DSCF3621.jpg?w=900';
+import image1 from '/images/DSCF3615.jpg?w=1000';
+import image2 from '/images/DSCF3626.jpg?w=1000';
+import image3 from '/images/DSCF3622.jpg?w=1000';
+import image4 from '/images/DSCF3665.jpg?w=1000';
+import image5 from '/images/DSCF3640.jpg?w=1000';
+import image6 from '/images/DSCF3621.jpg?w=1000';
 
 const images = [ {
     src: image1,

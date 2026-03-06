@@ -7,11 +7,11 @@ prev:
 ---
 <script setup>
 
-import image1 from '/images/L1008454-1.jpg?w=900';
-import image2 from '/images/L1008411-1.jpg?w=900';
-import image3 from '/images/L1008402.jpg?w=900';
-import image4 from '/images/L1008449-1.jpg?w=900';
-import image5 from '/images/L1008461-1.jpg?w=900';
+import image1 from '/images/L1008454-1.jpg?w=1000';
+import image2 from '/images/L1008411-1.jpg?w=1000';
+import image3 from '/images/L1008402.jpg?w=1000';
+import image4 from '/images/L1008449-1.jpg?w=1000';
+import image5 from '/images/L1008461-1.jpg?w=1000';
 
 
 const images = [

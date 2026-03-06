@@ -10,9 +10,9 @@ prev:
   link: /notes/hello-world
 ---
 <script setup>
-import image1 from '/images/DSCF6909.jpg?w=900';
-import image2 from '/images/DSCF7037.jpg?w=900';
-import image3 from '/images/DSCF4764.jpg?w=900';
+import image1 from '/images/DSCF6909.jpg?w=1000';
+import image2 from '/images/DSCF7037.jpg?w=1000';
+import image3 from '/images/DSCF4764.jpg?w=1000';
 </script>
 
 <Figure :src="image1" caption="View of Coit Tower from my hotel room in San Francisco" />

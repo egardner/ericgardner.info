@@ -11,14 +11,14 @@ next:
   link: /notes/wynoochee-lake
 ---
 <script setup>
-import image1 from '/images/IMG_1548.jpg?w=900';
-import image2 from '/images/IMG_1531.jpg?w=900';
-import image3 from '/images/IMG_1540.jpg?w=900';
-import image4 from '/images/IMG_1544.jpg?w=900';
-import image5 from '/images/IMG_1579.jpg?w=900';
-import image6 from '/images/IMG_1608.jpg?w=900';
-import image7 from '/images/IMG_1598.jpg?w=900';
-import image8 from '/images/IMG_1624.jpg?w=900';
+import image1 from '/images/IMG_1548.jpg?w=1000';
+import image2 from '/images/IMG_1531.jpg?w=1000';
+import image3 from '/images/IMG_1540.jpg?w=1000';
+import image4 from '/images/IMG_1544.jpg?w=1000';
+import image5 from '/images/IMG_1579.jpg?w=1000';
+import image6 from '/images/IMG_1608.jpg?w=1000';
+import image7 from '/images/IMG_1598.jpg?w=1000';
+import image8 from '/images/IMG_1624.jpg?w=1000';
 </script>
 
 Last week I completed the Timberline Trail, a roughly 40-mile loop that

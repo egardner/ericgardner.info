@@ -11,11 +11,11 @@ next:
   link: /notes/dahlia-farm
 ---
 <script setup>
-import image1 from '/images/DSCF3574.jpg?w=900';
-import image2 from '/images/DSCF3551.jpg?w=900';
-import image3 from '/images/DSCF3585.jpg?w=900';
-import image4 from '/images/DSCF3554.jpg?w=900';
-import image5 from '/images/DSCF3599.jpg?w=900';
+import image1 from '/images/DSCF3574.jpg?w=1000';
+import image2 from '/images/DSCF3551.jpg?w=1000';
+import image3 from '/images/DSCF3585.jpg?w=1000';
+import image4 from '/images/DSCF3554.jpg?w=1000';
+import image5 from '/images/DSCF3599.jpg?w=1000';
 </script>
 
 <Figure :src="image1" caption="Wynoochee Lake, Washington" />

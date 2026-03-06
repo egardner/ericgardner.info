@@ -10,9 +10,9 @@ next:
 ---
 
 <script setup>
-import image1 from '/images/DSCF8686.jpg?w=900';
-import image2 from '/images/DSCF8659.jpg?w=900';
-import image3 from '/images/DSCF8687.jpg?w=900';
+import image1 from '/images/DSCF8686.jpg?w=1000';
+import image2 from '/images/DSCF8659.jpg?w=1000';
+import image3 from '/images/DSCF8687.jpg?w=1000';
 </script>
 
 <Figure :src="image1" caption="Road to Cape Blanco lighthouse" />
