@@ -386,6 +386,35 @@ button:focus-visible {
 }
 
 /**
+ * Figure group: side-by-side images
+ * -------------------------------------------------------------------------- */
+
+.figure-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.figure-group figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .figure-group {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .vp-doc .figure-group {
+        margin-left: calc( -1 * var(--feature-offset) );
+        margin-right: calc( -1 * var(--feature-offset) );
+    }
+}
+
+/**
  * Image fade-in on load
  * -------------------------------------------------------------------------- */
 

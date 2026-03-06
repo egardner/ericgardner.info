@@ -27,6 +27,11 @@ Caught a brief sliver of sun in Old Town Portland last weekend.
 
 City of Roses • 玫瑰之城
 
-<div v-for="image in images">
-    <Figure :src="image.src" :alt="image.alt" />
+<div class="figure-group">
+    <Figure :src="image1.src" :alt="image1.alt" />
+    <Figure :src="image2.src" :alt="image2.alt" />
 </div>
+
+<Figure :src="image3.src" :alt="image3.alt" />
+<Figure :src="image4.src" :alt="image4.alt" />
+<Figure :src="image5.src" :alt="image5.alt" />
